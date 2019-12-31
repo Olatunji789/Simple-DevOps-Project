@@ -51,7 +51,12 @@ Ansible is an open-source automation platform. It is very, very simple to set up
    usermod -aG docker ansadmin
 
    ```
-1. Create a directory /etc/ansible and create an inventory file called "hosts" add control node and managed hosts IP addresses to it. 
+1. Create a directory /etc/ansible and create an inventory file called "hosts" add control node and managed hosts IP addresses to it. and 
+     [local]
+127.0.0.1
+
+[local:vars]
+ansible_connection=local
  
 ### Validation test
 
